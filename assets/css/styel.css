@@ -61,32 +61,26 @@ section img:hover {
   padding: 20px 0;
   margin-top: 5rem;
 }
-/* Bloques de código SQL */
-pre code {
-  display: block;
-  background-color: #f1f3f5; /* fondo gris claro */
-  color: #212529; /* texto oscuro */
-  padding: 15px;
-  border-radius: 8px;
-  overflow-x: auto; /* permite scroll horizontal si la línea es larga */
-  font-family: "Courier New", Courier, monospace; /* fuente monoespaciada */
-  line-height: 1.5;
-  font-size: 0.95rem;
-  white-space: pre-wrap; /* hace que el código se ajuste al ancho si es necesario */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  font-size: 0.85rem;
-}
 
-pre code::selection {
-  background-color: #cce5ff; /* color de selección de texto */
-}
-
+/* ---------------------------
+   Bloques de código SQL
+--------------------------- */
 pre {
-  max-height: 500px;
   max-height: 350px;
   overflow-y: auto;
-  font-size: 0.8rem;
   background: #f6f8fa;
   border-radius: 8px;
   padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+pre code {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  white-space: pre; /* respeta formato SQL */
+}
+
+pre code::selection {
+  background-color: #cce5ff;
 }
