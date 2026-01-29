@@ -77,8 +77,6 @@ pre code {
   font-size: 0.85rem;
 }
 
-}
-
 pre code::selection {
   background-color: #cce5ff;   /* color de selección de texto */
 }
