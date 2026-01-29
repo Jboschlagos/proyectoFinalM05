@@ -96,7 +96,7 @@ Inserción de datos
 
 Consultas ejecutadas
 
-Tecnologías utilizadas
+## Tecnologías utilizadas
 
 PostgreSQL
 
@@ -114,12 +114,12 @@ Prism.js
 
 Visual Studio Code
 
-Autor
+## Autor
 
 Jorge Bosch
 Aprendiz Fullstack JavaScript
 
-Nota
+## Nota
 
 Este repositorio corresponde a una evidencia académica, con fines educativos y de evaluación.
 
