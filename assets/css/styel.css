@@ -74,6 +74,9 @@ pre code {
   font-size: 0.95rem;
   white-space: pre-wrap;       /* hace que el código se ajuste al ancho si es necesario */
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  font-size: 0.85rem;
+}
+
 }
 
 pre code::selection {
