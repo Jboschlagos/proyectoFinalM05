@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Actividad SQL | Modelado y Consultas </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Prism CSS (resaltado de código) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" />
+
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="./assets/css/styel.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <span class="navbar-brand mb-0 h1">Actividad SQL | Modelado y Consultas SQL (ER/DDL/DML) —
+                PostgreSQL(pgAdmin)</span>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+
+        <header class="mb-4">
+            <h1 class="mb-3">Actividad de Aprendizaje – SQL</h1>
+            <p class="text-muted">
+                Evidencia de consultas SQL ejecutadas en PostgreSQL utilizando pgAdmin 4 y VS Code.
+                <Br>
+                Modelado de base de datos para un mercado digital, creación de tablas e inserción de datos de prueba.
+            </p>
+        </header>
+
+        <!-- BLOQUES DE CONSULTA -->
+
+        <section class="mb-5">
+            <h3>1. Diagrama Entidad Relacion Mercado Digital</h3>
+            <img src="./assets/img/mercadodigital.png" class="img-fluid shadow rounded"
+                alt="Diagrama ER Mercado Digital">
+        </section>
+
+        <section class="mb-5">
+            <h3>2. Script SQL del proyecto</h3>
+            <pre><code class="language-sql" id="sql-content">Cargando SQL...</code></pre>
+        </section>
+
+        <section class="mb-5">
+            <h3>3. Inserción de base de datos de prueba</h3>
+            <img src="./assets/img/poblamientoDML.png" class="img-fluid shadow rounded" alt="datos de prueba">
+        </section>
+
+        <section class="mb-5">
+            <h3>4. Oferta Verano 20% Descuento</h3>
+            <img src="./assets/img/ofertaVerano.png" class="img-fluid shadow rounded" alt="oferta verano 20% descuento">
+        </section>
+
+        <section class="mb-5">
+            <h3>5. Stock critico </h3>
+            <img src="./assets/img/stock.png" class="img-fluid shadow rounded" alt="Stock Critico">
+        </section>
+
+        <section class="mb-5">
+            <h3>6.1 Simulacion de Compra | Creacion de Orden</h3>
+            <img src="./assets/img/creacionDeOrden.png" class="img-fluid shadow rounded" alt="Creacion de orden">
+        </section>
+
+        <section class="mb-5">
+            <h3>6.2 Simulacion de Compra | Incertar Items </h3>
+            <img src="./assets/img/incertarItemsOrden.png" class="img-fluid shadow rounded" alt="Incertar Items">
+        </section>
+
+        <section class="mb-5">
+            <h3>6.3 Simulacion de Compra </h3>
+            <img src="./assets/img/simulacionDeCompra.png" class="img-fluid shadow rounded" alt="Simulacion de Compra">
+        </section>
+
+        <section class="mb-5">
+            <h3>7. Total Ventas Diciembre 2022</h3>
+            <img src="./assets/img/totalVentasDiciembre.png" class="img-fluid shadow rounded"
+                alt="total Ventas Diciembre 2022">
+        </section>
+
+        <section class="mb-5">
+            <h3>8. Total Ventas Diciembre 2022 con desglose.</h3>
+            <img src="./assets/img/totalVentasDiciembreDesglose.png" class="img-fluid shadow rounded" alt="total Ventas Diciembre 2022 c/desglose">
+        </section>
+
+        <section class="mb-5">
+            <h3>9. Usuario con más compras (2022) </h3>
+            <img src="./assets/img/usuarioConMasCompras.png" class="img-fluid shadow rounded" alt="Usuario con mas compras">
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p class="mb-1">
+                Programas usados <br>
+                PostgreSQL · pgAdmin 4 · Visual Studio Code
+            </p>
+            <p class="mb-1">
+                Autor Jorge Bosch | Aprendiz Fullstack Javascript
+            </p>
+            <p class="mb-0">
+                © 2026 – Evidencia académica
+            </p>
+        </div>
+    </footer>
+    <!-- Prism JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-sql.min.js"></script>
+
+    <script>
+        fetch('./assets/sql/mercadodigitalCT.sql')
+            .then(response => response.text())
+            .then(data => {
+                const codeBlock = document.getElementById('sql-content');
+                codeBlock.textContent = data;
+                Prism.highlightElement(codeBlock);
+            })
+            .catch(err => {
+                document.getElementById('sql-content').textContent = 'Error cargando el archivo SQL';
+                console.error(err);
+            });
+    </script>
+
+</body>
+
+</html>
