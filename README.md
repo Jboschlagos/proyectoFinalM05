@@ -1,6 +1,6 @@
-Actividad SQL | Modelado y Consultas
+#Actividad SQL | Modelado y Consultas
 
-PostgreSQL (pgAdmin 4)
+##PostgreSQL (pgAdmin 4)
 
 Descripción
 
@@ -8,12 +8,12 @@ Este proyecto corresponde a una actividad académica de SQL donde se desarrolla 
 
 La evidencia se presenta tanto en scripts SQL como en un archivo HTML que permite visualizar el código y los resultados de forma ordenada.
 
-Contenidos del proyecto
-1. Modelado Entidad–Relación
+##Contenidos del proyecto
+##1. Modelado Entidad–Relación
 
 Diseño de un mercado digital.
 
-Entidades principales:
+###Entidades principales:
 
 usuarios
 
@@ -27,9 +27,9 @@ order_items
 
 Relaciones y claves foráneas correctamente definidas.
 
-2. Script SQL (DDL)
+##2. Script SQL (DDL)
 
-Incluye:
+###Incluye:
 
 Creación de tablas
 
@@ -44,9 +44,9 @@ El script completo se encuentra en:
 /assets/sql/mercadodigitalCT.sql
 
 
-Y se muestra directamente en el index.html utilizando Prism.js para resaltar la sintaxis SQL.
+###Y se muestra directamente en el index.html utilizando Prism.js para resaltar la sintaxis SQL.
 
-3. Inserción de datos (DML)
+##3. Inserción de datos (DML)
 
 Poblamiento de tablas con datos de prueba.
 
